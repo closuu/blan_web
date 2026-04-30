@@ -78,7 +78,7 @@
                     <h3>${p.title}</h3>
                     <p>${p.description || ''}</p>
                     ${p.download_url
-                        ? `<a href="${p.download_url}" target="_blank"><button class="action-btn download-btn">View / Download</button></a>`
+                        ? `<a href="${p.download_url}" target="_blank"><button class="action-btn download-btn">View</button></a>`
                         : ''}
                 </div>`).join('');
         })();
