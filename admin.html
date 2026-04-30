@@ -320,7 +320,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 - boolean Admin Subsystem</p>
+        <p>&copy; 2026 - gonda Appdev Lab</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
@@ -538,14 +538,32 @@
             });
 
 
-            window.banUser = async(id) => {
-                if (!confirm('Ban this user? Their status will be set to "banned".')) return;
-                await sb.from('profiles').update({
-                    status: 'banned'
-                }).eq('id', id);
-                loadUsers();
-            };
+           window.banUser = async (id) => {
+    if (!confirm('Permanently delete this user? This cannot be undone.')) return;
 
+    const { data: { session } } = await sb.auth.getSession();
+
+    const res = await fetch(
+        'https://boaxqjioomzfglaqopnr.supabase.co/functions/v1/delete-user',
+        {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer ' + session.access_token
+            },
+            body: JSON.stringify({ userId: id })
+        }
+    );
+
+    const result = await res.json();
+
+    if (result.error) {
+        alert('Error: ' + result.error);
+    } else {
+        loadUsers();
+        loadStats();
+    }
+};
 
             document.getElementById('add-product-btn').addEventListener('click', async() => {
                 const title = document.getElementById('prod-title').value.trim();
