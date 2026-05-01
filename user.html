@@ -25,7 +25,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="user.html">My Profile</a></li>
                     <li><a href="games.html">Catalogue</a></li>
-                    <li><a href="tracker.html">Progress Tracker</a></li>
+                    <li><a href="tracker.html">mini notepad</a></li>
                     <li><a href="devlog.html">Devlog</a></li>
                     <br>
                     <li><a href="#" id="logout-link" style="color: #fe006a;">Logout</a></li>
@@ -143,7 +143,7 @@
                         <h3>${p.title}</h3>
                         <p>${p.description || ''}</p>
                         ${p.download_url
-                            ? `<a href="${p.download_url}" target="_blank"><button class="action-btn download-btn">Download / View</button></a>`
+                            ? `<a href="${p.download_url}" target="_blank"><button class="action-btn download-btn">View</button></a>`
                             : `<button class="action-btn download-btn" disabled style="opacity: 0.4;">No file yet</button>`
                         }
                     </div>`).join('');
