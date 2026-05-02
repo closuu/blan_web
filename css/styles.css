@@ -999,15 +999,6 @@ body.monochrome-mode .typed-cursor {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* ---- Catalogue / game cards in monochrome ---- */
 body.monochrome-mode .library-badge {
     background: #000;
@@ -1037,6 +1028,12 @@ body.monochrome-mode .game-card-thumb-placeholder {
     color: #333;
 }
 
+body.monochrome-mode #achievement-list li {
+    background: #0a0a0a;
+    border-color: #fff;
+    border-left-color: #fff;
+    color: #ffffff;
+}
 
 
 
