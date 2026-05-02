@@ -982,3 +982,34 @@ body.monochrome-mode form select:focus {
 }
 
 body.monochrome-mode form label { color: #888; }
+
+body.monochrome-mode .library-badge {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+body.monochrome-mode main h2 {
+    color: #ffffff;
+}
+
+body.monochrome-mode main p {
+    color: #cccccc;
+}
+
+body.monochrome-mode main h3 {
+    color: #aaaaaa;
+    border-left-color: #444;
+}
+
+body.monochrome-mode .typed-cursor {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
