@@ -1006,7 +1006,33 @@ body.monochrome-mode .typed-cursor {
     color: #ffffff;
 }
 
+body.monochrome-mode .library-badge {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+}
 
+body.monochrome-mode .game-card h3 {
+    color: #ffffff;
+}
+
+body.monochrome-mode .game-card p {
+    color: #aaaaaa;
+}
+
+body.monochrome-mode .game-card {
+    background: #0a0a0a;
+}
+
+body.monochrome-mode .games-grid {
+    background: #222;
+}
+
+body.monochrome-mode .game-card-thumb-placeholder {
+    background: #000;
+    border-color: #333;
+    color: #333;
+}
 
 
 
