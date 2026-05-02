@@ -936,11 +936,7 @@ body.monochrome-mode .profile-avatar {
     box-shadow: none;
 }
 
-body.monochrome-mode .library-badge {
-    color: #fff;
-    border-color: #fff;
-    background: transparent;
-}
+
 
 body.monochrome-mode .download-btn {
     border-color: #fff !important;
@@ -983,11 +979,7 @@ body.monochrome-mode form select:focus {
 
 body.monochrome-mode form label { color: #888; }
 
-body.monochrome-mode .library-badge {
-    background: #fff;
-    color: #000;
-    border: 1px solid #fff;
-}
+
 
 body.monochrome-mode main h2 {
     color: #ffffff;
@@ -1006,10 +998,25 @@ body.monochrome-mode .typed-cursor {
     color: #ffffff;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* ---- Catalogue / game cards in monochrome ---- */
 body.monochrome-mode .library-badge {
     background: #000;
     color: #fff;
     border: 1px solid #fff;
+}
+
+body.monochrome-mode .game-card {
+    background: #0a0a0a;
 }
 
 body.monochrome-mode .game-card h3 {
@@ -1018,10 +1025,6 @@ body.monochrome-mode .game-card h3 {
 
 body.monochrome-mode .game-card p {
     color: #aaaaaa;
-}
-
-body.monochrome-mode .game-card {
-    background: #0a0a0a;
 }
 
 body.monochrome-mode .games-grid {
@@ -1033,8 +1036,6 @@ body.monochrome-mode .game-card-thumb-placeholder {
     border-color: #333;
     color: #333;
 }
-
-
 
 
 
